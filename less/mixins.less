@@ -1,1 +1,9 @@
 // Mixins in here
+#mixins-desktop {
+	.display-flex(@direction: row; @justify: space-between; @align: center) {
+		display: flex;
+		flex-direction: @direction;
+		justify-content: @justify;
+		align-items: @align;
+	}
+}
