@@ -183,16 +183,16 @@ hr {
   border-bottom: none;
   margin: 0;
 }
-.animation-class {
-  animation-name: fade-in;
-  animation-duration: 1s;
+.color-animation-class {
+  animation-name: color-change;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
 }
-@keyframes fade-in {
+@keyframes color-change {
   0% {
-    opacity: 0;
+    color: #17a2b8;
   }
-  50% {
+  40% {
     opacity: 1;
     color: #212529;
   }

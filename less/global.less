@@ -65,10 +65,13 @@ hr {
 	margin: 0;
 }
 
-.animation-class {
-	#mixins .animation-properties(fade-in, 1s);
+.color-animation-class {
+	#mixins .animation-properties(color-change, 2s);
 	#mixins
-		.keyframes(fade-in, {0% {opacity: 0;} 50% {opacity: 1; color: @shark}});
+		.keyframes(
+			color-change,
+			{0% {color: @eastern-blue;} 40% {opacity: 1; color: @shark;}}
+		);
 }
 
 .btn {
