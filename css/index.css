@@ -387,11 +387,17 @@ hr {
   width: 50%;
   font-size: 1.6rem;
 }
+@media (max-width: 500px) {
+  .home .main-form-container .form-container {
+    width: 100%;
+  }
+}
 .home .main-form-container .form-container .form-row {
   width: 100%;
   padding: 3% 0;
 }
 .home .main-form-container .form-container .form-row:last-child {
+  display: flex;
   justify-content: flex-end;
 }
 .home .main-form-container .form-container .form-row label {

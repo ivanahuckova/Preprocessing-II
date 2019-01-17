@@ -117,11 +117,16 @@
 			@font-color: @shark;
 			font-size: @button-font-size;
 
+			@media @mobile {
+				width: 100%;
+			}
+
 			.form-row {
 				width: 100%;
 				padding: 3% 0;
 
 				&:last-child {
+					display: flex;
 					justify-content: flex-end;
 				}
 
