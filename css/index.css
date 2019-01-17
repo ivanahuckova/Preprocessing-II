@@ -197,6 +197,15 @@ hr {
     color: #212529;
   }
 }
+.btn {
+  padding: 4% 3%;
+  background-color: #17a2b8;
+  border-radius: 15px;
+  border: 0.5px solid #c0c0c0;
+  color: white;
+  font-size: 1.6rem;
+  text-align: center;
+}
 .container .nav-container {
   display: flex;
   flex-direction: row;
@@ -358,12 +367,49 @@ hr {
     width: 85%;
   }
 }
-.home .content-pick .destination .btn {
-  padding: 4% 3%;
-  background-color: #17a2b8;
-  border-radius: 15px;
-  border: 0.5px solid #c0c0c0;
-  color: white;
+.home .main-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px dashed #c0c0c0;
+  padding: 5%;
+}
+.home .main-form-container h4 {
+  padding-bottom: 5%;
+}
+.home .main-form-container .form-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 50%;
   font-size: 1.6rem;
-  text-align: center;
+}
+.home .main-form-container .form-container .form-row {
+  width: 100%;
+  padding: 3% 0;
+}
+.home .main-form-container .form-container .form-row:last-child {
+  justify-content: flex-end;
+}
+.home .main-form-container .form-container .form-row label {
+  width: 49%;
+  display: inline-block;
+}
+.home .main-form-container .form-container .form-row input {
+  width: 49%;
+  display: inline-block;
+  line-height: 2;
+  border-radius: 10px;
+  border: 1px solid #c0c0c0;
+}
+.home .main-form-container .form-container .form-row textarea {
+  width: 49%;
+  display: inline-block;
+  line-height: 2;
+  border-radius: 10px;
+  border: 1px solid #c0c0c0;
+  vertical-align: top;
 }
