@@ -48,6 +48,9 @@ img {
 	max-width: 800px;
 	width: 100%;
 	margin: 0 auto;
+	@media @mobile {
+		width: 90%;
+	}
 }
 
 a {
@@ -57,7 +60,13 @@ a {
 }
 
 hr {
-	border-top: 2px dashed #c0c0c0;
+	border-top: 2px dashed @silver;
 	border-bottom: none;
 	margin: 0;
+}
+
+.animation-class {
+	#mixins .animation-properties(fade-in, 1s);
+	#mixins
+		.keyframes(fade-in, {0% {opacity: 0;} 50% {opacity: 1; color: @shark}});
 }

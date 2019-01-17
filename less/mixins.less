@@ -1,5 +1,5 @@
 // Mixins in here
-#mixins-desktop {
+#mixins {
 	.display-flex(@direction: row; @justify: space-between; @align: center) {
 		display: flex;
 		flex-direction: @direction;
@@ -10,10 +10,22 @@
 	.button() {
 		padding: 4% 3%;
 		background-color: @button-bg;
-		border-radius: 5px;
+		border-radius: 15px;
+		border: 0.5px solid @silver;
 		color: white;
 		font-size: @button-font-size;
 		text-align: center;
-		margin: 0 15% 0 0;
+	}
+
+	.animation-properties(@name; @time; @count: infinite) {
+		animation-name: @name;
+		animation-duration: @time;
+		animation-iteration-count: @count;
+	}
+
+	.keyframes(@name; @arguments) {
+		@keyframes @name {
+			@arguments();
+		}
 	}
 }
