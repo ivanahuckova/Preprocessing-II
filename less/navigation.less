@@ -1,1 +1,27 @@
 // Navigation Styles here
+.container {
+	.nav-container {
+		#mixins .display-flex();
+		padding: 2% 0 0 0;
+		@media @mobile {
+			#mixins .display-flex(column, center, center);
+		}
+
+		.logo-container {
+			width: 50%;
+			@media @mobile {
+				text-align: center;
+			}
+			h2 {
+				font-size: @h2-font-size;
+			}
+		}
+		.nav-items-container {
+			#mixins .display-flex();
+			width: 50%;
+			@media @mobile {
+				width: 70%;
+			}
+		}
+	}
+}
